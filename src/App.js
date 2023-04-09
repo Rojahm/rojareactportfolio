@@ -3,7 +3,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Menu from "./components/Menu";
 import { useState } from "react";
 import Hero from "./components/Hero";
+import About from "./components/About";
 import Projects from "./components/Projects";
+import Cats from "./components/Cats";
+import Contact from "./components/Contact";
 
 function App() {
   const menuItems = ["roja", "about", "work", "cats", "contact"];
@@ -14,10 +17,11 @@ function App() {
   return (
     <div className="App">
       <Menu menuItems={menuItems} handleMenu={handleMenu} />
-      <header className="App-header">
-        {selectedMenu === 0 && <Hero />}
-        {selectedMenu === 2 && <Projects />}
-      </header>
+      {selectedMenu === 0 && <Hero />}
+      {selectedMenu === 1 && <About />}
+      {selectedMenu === 2 && <Projects />}
+      {selectedMenu === 3 && <Cats />}
+      {selectedMenu === 4 && <Contact />}
     </div>
   );
 }

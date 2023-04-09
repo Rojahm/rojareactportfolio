@@ -7,9 +7,12 @@
   height: 40vmin;
   pointer-events: none;
 }
-
-.App-header {
-  background-color: #282c34;
+.App .Hero,
+.About,
+.Projects,
+.Cats,
+.Contact {
+  background-color: #28342b;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -18,7 +21,18 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.App .Hero {
+  background-color: #282c34;
+}
+.App .About {
+  background-color: #302834;
+}
+.App .Cats {
+  background-color: #342828;
+}
+.App .Contact {
+  background-color: #343228;
+}
 .App-link {
   color: #61dafb;
 }
