@@ -9,6 +9,9 @@
   display: flex;
   justify-content: space-evenly;
 }
-.Menu a {
-  text-decoration: none;
+.Menu button {
+  padding: 0;
+  border: none;
+  color: aliceblue;
+  background-color: transparent;
 }
