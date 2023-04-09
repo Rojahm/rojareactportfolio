@@ -1,4 +1,13 @@
 .Menu {
+  position: fixed;
+  width: 100%;
+  font-size: larger;
+  font-weight: bolder;
+  padding-top: 0.5vh;
+}
+.Menu .bar {
+  display: flex;
+  justify-content: space-evenly;
 }
 .Menu a {
   text-decoration: none;
