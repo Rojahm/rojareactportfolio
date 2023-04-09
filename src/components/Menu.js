@@ -1,9 +1,10 @@
+import "./Menu.css";
 const Menu = ({ menuItems }) => {
   return (
-    <div>
+    <div className="Menu d-flex justify-content-evenly">
       {menuItems.map((item, i) => (
         <a href="/" key={i}>
-          {item.toUpperCase()}
+          {item.slice(0, 1).toUpperCase() + item.slice(1)}
         </a>
       ))}
     </div>
