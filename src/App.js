@@ -1,7 +1,8 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel";
+
+// import "owl.carousel/dist/assets/owl.carousel.css";
+// import "owl.carousel";
 import Menu from "./components/Menu";
 import { useState } from "react";
 import Hero from "./components/Hero";
@@ -19,15 +20,6 @@ function App() {
   return (
     <div className="App">
       <Menu menuItems={menuItems} handleMenu={handleMenu} />
-      <div class="owl-carousel owl-theme">
-        <div> Your Content </div>
-        <div> Your Content </div>
-        <div> Your Content </div>
-        <div> Your Content </div>
-        <div> Your Content </div>
-        <div> Your Content </div>
-        <div> Your Content </div>
-      </div>
       {selectedMenu === 0 && <Hero />}
       {selectedMenu === 1 && <About />}
       {selectedMenu === 2 && <Projects />}
