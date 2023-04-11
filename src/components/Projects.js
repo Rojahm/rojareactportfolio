@@ -13,7 +13,7 @@ const Projects = () => {
     axios
       .get(url, {
         headers: {
-          Authorization: `token ${tok}`,
+          Authorization: `Bearer ${tok}`,
         },
       })
       .then((response) => console.log(response))
