@@ -8,6 +8,7 @@ const Carousel = ({ sites }) => {
       <OwlCarousel className="owl-theme" loop margin={10} nav center>
         {sites.map((site, i) => (
           <div className="item">
+            <img key={i} src={site.screenshot_url} alt={site.name} />
             <h4 key={i}>{site.name}</h4>
           </div>
         ))}
