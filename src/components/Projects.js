@@ -4,6 +4,7 @@ import Carousel from "./Carousel";
 
 const Projects = () => {
   const [sites, setSites] = useState({});
+  const [ready, setReady] = useState("false");
   // const [error, setError] = useState();
   const tok = "HIzdHiGenwgtOATwfhAgmAlDfMaV7psTwMJmnf6w_6I";
   const url = "https://api.netlify.com/api/v1/sites";
@@ -14,10 +15,18 @@ const Projects = () => {
           Authorization: `Bearer ${tok}`,
         },
       })
-      .then((response) => setSites(response.data));
+      .then((response) => {
+        console.log(response);
+        setSites(response.data);
+        setReady(true);
+      });
     // .catch((error) => setError(error));
   };
-  getSites();
+
+  if (!ready) {
+    getSites();
+  }
+
   return (
     <div className="Projects">
       <p>from projects</p>
