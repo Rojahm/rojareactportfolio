@@ -1,8 +1,5 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
-// import "owl.carousel/dist/assets/owl.carousel.css";
-// import "owl.carousel";
 import Menu from "./components/Menu";
 import { useState } from "react";
 import Hero from "./components/Hero";
