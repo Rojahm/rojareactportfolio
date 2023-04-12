@@ -18,7 +18,11 @@ function App() {
   return (
     <div className="App">
       <div className="header">
-        <Menu menuItems={menuItems} handleMenu={handleMenu} />
+        <Menu
+          menuItems={menuItems}
+          handleMenu={handleMenu}
+          selectedMenu={selectedMenu}
+        />
       </div>
       <div className="content">
         {selectedMenu === 0 && <Hero />}
