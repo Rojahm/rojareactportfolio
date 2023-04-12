@@ -1,6 +1,61 @@
-.Carousel .slider-items .item {
-  opacity: 0.5;
+.Carousel {
 }
-.Carousel .slider-items .item .active .center {
-  opacity: unset;
+.Carousel
+  .owl-carousel
+  .owl-stage-outer
+  .owl-stage
+  .owl-item.active.center
+  .item
+  .card {
+  transform: scale(1.15);
+  opacity: 1;
+}
+.Carousel .item {
+  transform: scale(0.9);
+  transition: all 200ms ease-in-out;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.Carousel .card {
+  opacity: 0.7;
+  border: unset;
+  cursor: pointer;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+.Carousel .card-img-top {
+  border-radius: 4px;
+}
+.Carousel .card-title {
+  color: #fff;
+  background-color: #07a569;
+  margin-bottom: 0;
+  text-align: center;
+  padding: 5px 8px;
+}
+.Carousel .card-title a {
+  color: #fff;
+  text-decoration: none;
+}
+.Carousel .owl-nav {
+  line-height: 40px;
+  font-size: 80px;
+}
+.Carousel .owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+  background: #60003d00;
+  border-radius: 0;
+  border: none;
+  padding: 5px !important;
+  margin: 0;
+}
+.Carousel .owl-nav .owl-prev {
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+.Carousel .owl-nav .owl-next {
+  position: absolute;
+  right: 0;
+  top: 50%;
 }

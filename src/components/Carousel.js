@@ -5,36 +5,43 @@ import "./Carousel.css";
 
 const Carousel = ({ sites, ready }) => {
   const options = {
-    items: 3,
-    loop: true,
+    loop: false,
+    margin: 10,
     center: true,
     nav: true,
-    margin: 10,
+    dots: true,
     responsiveClass: true,
-    resposive: {
+    responsive: {
+      0: {
+        items: 1,
+      },
       600: {
         items: 3,
       },
-      900: {
-        items: 5,
+      1000: {
+        items: 4,
       },
     },
   };
   if (ready) {
     return (
       <div className="Carousel">
-        <OwlCarousel className="slider-items owl-theme" {...options}>
+        <OwlCarousel className="owl-theme" {...options}>
           {sites.map((site) => {
             return (
               <div className="item mx-3">
-                <a href={site.ssl_url}>
+                <div className="card shadow-sm">
                   <img
-                    className="mb-3"
+                    className="card-img-top mb-3"
                     src={site.screenshot_url}
                     alt={site.name}
                   />
-                </a>
-                <h4>{site.name.split("-").slice(0, 2).join(" ") + "!"}</h4>
+                  <div className="card-title">
+                    <a href={site.ssl_url}>
+                      {site.name.split("-").slice(0, 2).join(" ") + "!"}
+                    </a>
+                  </div>
+                </div>
               </div>
             );
           })}
