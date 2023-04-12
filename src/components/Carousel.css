@@ -1,4 +1,6 @@
-.Carousel .item {
-  opacity: 0.6;
-  width: 150px;
+.Carousel .slider-items .item {
+  opacity: 0.5;
+}
+.Carousel .slider-items .item .active .center {
+  opacity: unset;
 }

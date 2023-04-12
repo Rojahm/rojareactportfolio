@@ -1,18 +1,17 @@
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
+import "./Carousel.css";
 
 const Carousel = ({ sites, ready }) => {
   const options = {
+    items: 3,
     loop: true,
     center: true,
     nav: true,
     margin: 10,
     responsiveClass: true,
     resposive: {
-      0: {
-        items: 1,
-      },
       600: {
         items: 3,
       },
@@ -24,10 +23,10 @@ const Carousel = ({ sites, ready }) => {
   if (ready) {
     return (
       <div className="Carousel">
-        <OwlCarousel className="owl-theme" {...options}>
+        <OwlCarousel className="slider-items owl-theme" {...options}>
           {sites.map((site) => {
             return (
-              <div className="item mx-3 rounded">
+              <div className="item mx-3">
                 <a href={site.ssl_url}>
                   <img
                     className="mb-3"

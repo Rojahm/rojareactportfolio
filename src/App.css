@@ -27,6 +27,9 @@
 .App .About {
   background-color: #302834;
 }
+.App .Projects {
+  overflow: hidden;
+}
 .App .Cats {
   background-color: #342828;
 }
