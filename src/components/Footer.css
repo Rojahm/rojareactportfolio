@@ -2,15 +2,11 @@
   position: fixed;
   bottom: 0;
   width: 100%;
+  color: #fff;
 }
 .Footer .bar {
-  display: flex;
-  justify-content: space-evenly;
-}
-.Footer button {
-  border-radius: 40px 40px 0 0;
-  width: 60%;
-  border: none;
-  color: aliceblue;
+  margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 40px 40px 0 0;
+  width: 99.7%;
 }

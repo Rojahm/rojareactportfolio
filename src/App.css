@@ -4,6 +4,7 @@
 }
 .App .Link {
   text-decoration: none;
+  color: #fff;
 }
 .App .Title {
   font-size: 2em;
@@ -41,7 +42,6 @@
 }
 .App .About {
   background-color: #302834;
-  padding-top: 15vh;
 }
 .App .Projects {
   overflow: hidden;
@@ -51,11 +51,4 @@
 }
 .App .Contact {
   background-color: #343228;
-}
-.App .Contact ul {
-  list-style: none;
-}
-.App .Contact a {
-  text-decoration: none;
-  color: #fff;
 }

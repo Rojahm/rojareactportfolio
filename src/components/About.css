@@ -1,0 +1,36 @@
+.About .container p {
+  font-size: 1.3rem;
+}
+.About .Title {
+  color: rgb(221, 0, 255);
+}
+@media (max-width: 700px) {
+  .About .container p {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 500px) {
+  .About .container p {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 420px) {
+  .About .container p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 348px) {
+  .About .container p {
+    font-size: 0.98rem;
+  }
+}
+@media (max-width: 350px) {
+  .About .container p {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 290px) {
+  .About .container p {
+    font-size: 0.8rem;
+  }
+}
