@@ -1,9 +1,13 @@
+import "./Cats.css";
+
 const Cats = () => {
   return (
     <div className="Cats">
-      <h1>See my Cats</h1>
+      <h1>
+        See my <span className="Title">Cats</span>
+      </h1>
       <div className="container d-flex justify-content-evenly">
-        <div>
+        <div className="align-self-center">
           <h2>Mighty Makhmal</h2>
           <img
             className="rounded my-3"
@@ -11,9 +15,15 @@ const Cats = () => {
             alt="Mighty Makhmal"
             width="200px"
           />
-          <p>About Makhmal!</p>
+
+          <a
+            className="Link"
+            href="https://graceful-marigold-c50fbd.netlify.app/"
+          >
+            <button>About Makhmal!</button>
+          </a>
         </div>
-        <div>
+        <div className="align-self-center">
           <h2>Silly Shalil</h2>
           <img
             className="rounded my-3"
@@ -21,7 +31,9 @@ const Cats = () => {
             alt="Silly Shalil"
             width="200px"
           />
-          <p>About Shalil!</p>
+          <a className="Link" href="https://leafy-puffpuff-b9b541.netlify.app/">
+            <button>About Shalil!</button>
+          </a>
         </div>
       </div>
     </div>

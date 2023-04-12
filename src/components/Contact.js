@@ -1,7 +1,9 @@
 const Contact = () => {
   return (
     <div className="Contact">
-      <h1>How to Contact me</h1>
+      <h1>
+        How to <span className="Title">Contact</span> me
+      </h1>
       <div className="container">
         <p>
           I’m interested in freelance opportunities. If you have other requests

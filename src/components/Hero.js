@@ -1,7 +1,9 @@
 const Hero = () => {
   return (
     <div className="Hero">
-      <h1>👋Hi I’m Roja</h1>
+      <h1>
+        👋Hi I’m <span className="Title">Roja</span>
+      </h1>
       <div className="container">
         <p>
           Roja Hosseini - EMEA based front-end developer currently i’m building

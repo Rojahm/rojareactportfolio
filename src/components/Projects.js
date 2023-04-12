@@ -28,7 +28,9 @@ const Projects = () => {
 
   return (
     <div className="Projects">
-      <p>from projects</p>
+      <h1>
+        See my <span className="Title">Work</span>
+      </h1>
       <Carousel sites={sites} ready={ready} />
     </div>
   );
