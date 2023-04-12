@@ -2,10 +2,16 @@
   text-align: center;
   font-family: "Jost", sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App .container {
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0.8;
+  margin-top: 0;
+  padding: 5vh 10vw;
+  border-radius: 4px;
+}
+.App h1 {
+  margin: 0;
+  padding: 0;
 }
 .App .Hero,
 .About,
@@ -26,6 +32,7 @@
 }
 .App .About {
   background-color: #302834;
+  padding-top: 15vh;
 }
 .App .Projects {
   overflow: hidden;
@@ -35,6 +42,13 @@
 }
 .App .Contact {
   background-color: #343228;
+}
+.App .Contact ul {
+  list-style: none;
+}
+.App .Contact a {
+  text-decoration: none;
+  color: #fff;
 }
 .App-link {
   color: #61dafb;
