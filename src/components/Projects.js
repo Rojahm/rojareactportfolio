@@ -17,7 +17,6 @@ const Projects = () => {
       })
       .then((response) => {
         setReady(true);
-        console.log(response.data);
         setSites(response.data);
       });
     // .catch((error) => setError(error));
