@@ -14,6 +14,9 @@ const Footer = () => {
           Ro?a
         </a>
       </div>
+      <div>
+        <button className="btn btn-dark p-0">🌈</button>
+      </div>
     </div>
   );
 };
