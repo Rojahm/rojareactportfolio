@@ -6,10 +6,9 @@
   transition: all 200ms ease-in-out;
 }
 .Cats button:hover {
-  background-color: #fff;
-  border: 2px solid #fff;
+  background-color: orangered;
+  border: 2px solid orangered;
   border-radius: 4px;
-  color: #282c34;
 }
 .Cats .Title {
   color: orangered;
