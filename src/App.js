@@ -14,7 +14,6 @@ function App() {
   const [theme, setTheme] = useState("dark");
   const toggleTheme = () =>
     setTheme((currentTheme) => (currentTheme === "dark" ? "light" : "dark"));
-  console.log(theme);
   const menuItems = ["roja", "about", "work", "cats", "contact"];
   const [selectedMenu, setSelectedMenu] = useState(0);
   const handleMenu = (id) => {
@@ -37,7 +36,6 @@ function App() {
       .then((response) => {
         setReady(true);
         setSites(response.data);
-        console.log(response);
       });
     // .catch((error) => setError(error));
   };
@@ -63,7 +61,11 @@ function App() {
         {selectedMenu === 4 && <Contact />}
       </div>
       <div className="footer">
-        <Footer onClick={toggleTheme} theme={theme} />
+        <Footer
+          onClick={toggleTheme}
+          theme={theme}
+          selectedMenu={menuItems[selectedMenu]}
+        />
       </div>
     </div>
   );
