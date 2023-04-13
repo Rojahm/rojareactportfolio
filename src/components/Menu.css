@@ -1,0 +1,35 @@
+.Menu {
+  display: flex;
+  justify-content: space-evenly;
+  position: fixed;
+  width: 100%;
+  font-size: larger;
+  padding-top: 0.5vh;
+}
+.App .Menu button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.App#dark .Menu button {
+  color: aliceblue;
+}
+.App#light .Menu button {
+  color: rgb(43, 43, 44);
+  font-weight: 800;
+}
+#light .Menu #roja {
+  color: rgb(3, 60, 230) !important;
+}
+#light .Menu #about {
+  color: rgb(192, 3, 212) !important;
+}
+#light .Menu #work {
+  color: rgb(0, 175, 85) !important;
+}
+#light .Menu #cats {
+  color: orangered !important;
+}
+#light .Menu #contact {
+  color: rgb(119, 191, 2) !important;
+}
