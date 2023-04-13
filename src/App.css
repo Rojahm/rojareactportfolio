@@ -6,11 +6,16 @@
   text-decoration: none;
   color: #fff;
 }
-.App .Title {
-  font-size: 2em;
+.App h1 {
   position: relative;
-  bottom: -25px;
+  bottom: -15px;
   z-index: 3;
+}
+.App .Title {
+  font-size: 1.6em;
+  position: relative;
+  bottom: -10px;
+  font-weight: 700;
 }
 .App .container {
   background-color: rgba(0, 0, 0, 0.5);

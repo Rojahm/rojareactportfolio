@@ -5,7 +5,7 @@ import "./Carousel.css";
 
 const Carousel = ({ sites, ready }) => {
   const options = {
-    loop: false,
+    loop: true,
     margin: 10,
     center: true,
     nav: true,
@@ -16,10 +16,10 @@ const Carousel = ({ sites, ready }) => {
         items: 1,
       },
       600: {
-        items: 3,
+        items: 1.5,
       },
       1000: {
-        items: 4,
+        items: 2,
       },
     },
   };
@@ -29,10 +29,10 @@ const Carousel = ({ sites, ready }) => {
         <OwlCarousel className="owl-theme" {...options}>
           {sites.map((site) => {
             return (
-              <div className="item mx-3">
+              <div className="item">
                 <div className="card shadow-sm">
                   <img
-                    className="card-img-top mb-3"
+                    className="card-img-top"
                     src={site.screenshot_url}
                     alt={site.name}
                   />

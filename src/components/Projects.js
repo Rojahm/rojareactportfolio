@@ -31,7 +31,9 @@ const Projects = () => {
       <h1>
         See my <span className="Title">Work</span>
       </h1>
-      <Carousel sites={sites} ready={ready} />
+      <div className="container">
+        <Carousel sites={sites} ready={ready} />
+      </div>
     </div>
   );
 };
