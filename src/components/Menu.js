@@ -1,4 +1,3 @@
-import "./Menu.css";
 const Menu = ({ menuItems, handleMenu, selectedMenu }) => {
   return (
     <div className="Menu">

@@ -1,5 +1,3 @@
-import "./Hero.css";
-
 const Hero = () => {
   return (
     <div className="Hero">

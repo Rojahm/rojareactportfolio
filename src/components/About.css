@@ -1,9 +1,7 @@
 .About .container p {
   font-size: 1.3rem;
 }
-.About .Title {
-  color: rgb(221, 0, 255);
-}
+
 @media (max-width: 700px) {
   .About .container p {
     font-size: 1.2rem;

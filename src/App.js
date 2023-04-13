@@ -11,6 +11,10 @@ import Footer from "./components/Footer";
 import axios from "axios";
 
 function App() {
+  const [theme, setTheme] = useState("dark");
+  const toggleTheme = () =>
+    setTheme((currentTheme) => (currentTheme === "dark" ? "light" : "dark"));
+  console.log(theme);
   const menuItems = ["roja", "about", "work", "cats", "contact"];
   const [selectedMenu, setSelectedMenu] = useState(0);
   const handleMenu = (id) => {
@@ -43,7 +47,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="App" id={theme}>
       <div className="header">
         <Menu
           menuItems={menuItems}
@@ -59,7 +63,7 @@ function App() {
         {selectedMenu === 4 && <Contact />}
       </div>
       <div className="footer">
-        <Footer />
+        <Footer onClick={toggleTheme} theme={theme} />
       </div>
     </div>
   );

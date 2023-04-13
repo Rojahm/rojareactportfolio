@@ -1,5 +1,4 @@
 import Carousel from "./Carousel";
-import "./Projects.css";
 
 const Projects = ({ sites, ready }) => {
   return (

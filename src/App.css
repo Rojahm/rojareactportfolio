@@ -2,9 +2,34 @@
   text-align: center;
   font-family: "Jost", sans-serif;
 }
+.App .Menu {
+  position: fixed;
+  width: 100%;
+  font-size: larger;
+  padding-top: 0.5vh;
+}
+.App .Menu .bar {
+  display: flex;
+  justify-content: space-evenly;
+}
+.App .Menu button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.App#dark .Menu button {
+  color: aliceblue;
+}
+.App#light .Menu button {
+  color: rgb(43, 43, 44);
+  font-weight: 800;
+}
 .App .Link {
   text-decoration: none;
   color: #fff;
+}
+.App#light .Link {
+  color: rgba(6, 5, 5, 0.916);
 }
 .App h1 {
   position: relative;
@@ -17,12 +42,45 @@
   bottom: -10px;
   font-weight: 700;
 }
+
+.App#light .Hero .Title {
+  color: rgb(0, 128, 255);
+}
+.App#light .About .Title {
+  color: rgb(221, 0, 255);
+}
+.App#light .Projects .Title {
+  color: rgb(2, 252, 152);
+}
+.App#light .Cats .Title {
+  color: orangered;
+}
+.App#light .Contact .Title {
+  color: rgb(98, 255, 0);
+}
 .App .container {
-  background-color: rgba(0, 0, 0, 0.5);
   opacity: 0.8;
   margin-top: 0;
   padding: 5vh 10vw;
   border-radius: 4px;
+}
+.App#dark .container {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.App#light .Hero .container {
+  background-color: rgba(0, 128, 255, 0.41);
+}
+.App#light .About .container {
+  background-color: rgba(221, 0, 255, 0.411);
+}
+.App#light .Projects .container {
+  background-color: rgba(2, 252, 152, 0.353);
+}
+.App#light .Cats .container {
+  background-color: rgba(255, 68, 0, 0.426);
+}
+.App#light .Contact .container {
+  background-color: rgba(98, 255, 0, 0.416);
 }
 .App h1 {
   margin: 0;
@@ -42,21 +100,48 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-.App .Hero {
+.App#light .Hero,
+.App#light .About,
+.App#light .Projects,
+.App#light .Cats,
+.App#light .Contact {
+  background-color: rgb(244, 238, 228);
+  color: rgba(2, 2, 2, 0.978);
+}
+.App#dark .Hero {
   background-color: #282c34;
 }
-.App .About {
+
+.App#dark .About {
   background-color: #302834;
 }
-.App .Projects {
+.App#dark .Projects {
   overflow: hidden;
 }
-.App .Cats {
+.App#dark .Cats {
   background-color: #342828;
 }
-.App .Contact {
+.App#dark .Contact {
   background-color: #343228;
 }
 .App .Load {
   margin: 0 auto;
+}
+.App .Footer {
+  position: fixed;
+  display: flex;
+  justify-content: space-evenly;
+  bottom: 0;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 40px 40px 0 0;
+  width: 99.7%;
+}
+.App#dark .Footer {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.App#light .Footer {
+  color: #282c34;
+  background-color: rgb(189, 198, 206);
 }
