@@ -24,7 +24,7 @@ const Cats = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <button>About Makhmal!</button>
+              <button>About Makhmal</button>
             </a>
           </div>
         </div>
@@ -45,7 +45,7 @@ const Cats = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <button>About Shalil!</button>
+              <button>About Shalil</button>
             </a>
           </div>
         </div>
