@@ -13,18 +13,36 @@ const Contact = () => {
         </p>
         <ul className="contact-list">
           <li>
-            <a className="Link" href="mailto:s.roja.h.m@gmail.com">
-              📧email: s.roja.h.m@gmail.com
+            📧email:{" "}
+            <a
+              className="Link"
+              href="mailto:s.roja.h.m@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              s.roja.h.m@gmail.com
             </a>
           </li>
           <li>
-            <a className="Link" href="https://github.com/Rojahm">
-              🐱github: @Rojahm
+            🐱github:{" "}
+            <a
+              className="Link"
+              href="https://github.com/Rojahm"
+              target="_blank"
+              rel="noreferrer"
+            >
+              @Rojahm
             </a>
           </li>
           <li>
-            <a className="Link" href="https://www.instagram.com/rojadoesnt">
-              📷instagram: @rojadoesnt
+            📷instagram:{" "}
+            <a
+              className="Link"
+              href="https://www.instagram.com/rojadoesnt"
+              target="_blank"
+              rel="noreferrer"
+            >
+              @rojaisnothere
             </a>
           </li>
         </ul>
