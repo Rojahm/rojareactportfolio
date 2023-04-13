@@ -2,6 +2,7 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import "./Carousel.css";
+import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 
 const Carousel = ({ sites, ready }) => {
   const options = {
@@ -49,7 +50,12 @@ const Carousel = ({ sites, ready }) => {
       </div>
     );
   } else {
-    return <p>Loadin</p>;
+    return (
+      <>
+        <p>Loading...</p>
+        <ClimbingBoxLoader className="Load" color="#36d7b7" />
+      </>
+    );
   }
 };
 
