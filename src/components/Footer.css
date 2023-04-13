@@ -1,0 +1,41 @@
+.App .Footer {
+  position: fixed;
+  display: flex;
+  justify-content: space-evenly;
+  bottom: 0;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 40px 40px 0 0;
+  width: 99.7%;
+  font-size: 0.8rem;
+  font-weight: unset;
+  color: #fff;
+}
+.App#dark .Footer {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.App#light .Footer#roja {
+  background-color: rgb(0, 100, 199);
+}
+.App#light .Footer#about {
+  background-color: rgb(142, 4, 163);
+}
+.App#light .Footer#work {
+  background-color: rgb(0, 174, 93);
+}
+.App#light .Footer#cats {
+  background-color: orangered;
+}
+.App#light .Footer#contact {
+  background-color: rgb(72, 189, 0);
+}
+.App#dark .Footer .Link {
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: unset;
+}
+.App#light .Footer .Link {
+  color: #ffffffcf;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
