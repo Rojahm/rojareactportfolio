@@ -38,7 +38,7 @@ const Contact = () => {
             📷instagram:{" "}
             <a
               className="Link"
-              href="https://www.instagram.com/rojadoesnt"
+              href="https://www.instagram.com/rojaisnothere"
               target="_blank"
               rel="noreferrer"
             >
